@@ -1,0 +1,12 @@
+[gd_scene load_steps=2 format=3 uid="uid://dxot3xxywblvc"]
+
+[ext_resource type="Script" uid="uid://b8tkhcdc4t80u" path="res://CarAssembler.gd" id="1_l2ofb"]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource("1_l2ofb")
+
+[node name="RigidBody2D" type="RigidBody2D" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

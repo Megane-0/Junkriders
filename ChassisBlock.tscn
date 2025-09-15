@@ -1,0 +1,25 @@
+[gd_scene load_steps=3 format=3 uid="uid://c4pgiakwaw2md"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_u7qsn"]
+rough = true
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_5qfg3"]
+size = Vector2(50, 50)
+
+[node name="Chassit" type="RigidBody2D"]
+mass = 3.0
+physics_material_override = SubResource("PhysicsMaterial_u7qsn")
+linear_damp = 0.05
+angular_damp = 0.1
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_5qfg3")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+offset_left = -25.0
+offset_top = -25.0
+offset_right = 95.0
+offset_bottom = 5.0
+scale = Vector2(0.413653, 1.69175)
+color = Color(0.554109, 1, 0.908827, 1)

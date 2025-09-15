@@ -1,0 +1,25 @@
+[gd_scene load_steps=5 format=3 uid="uid://8hvtbjisam8a"]
+
+[ext_resource type="Script" uid="uid://s1vano28eigm" path="res://wheel.gd" id="1_kaysr"]
+[ext_resource type="Texture2D" uid="uid://gfyrntmbldy8" path="res://Art/wheels-icon-png-31827.png" id="2_upeim"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_iqcod"]
+friction = 4.0
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_vdr78"]
+
+[node name="Wheel" type="RigidBody2D"]
+z_as_relative = false
+physics_material_override = SubResource("PhysicsMaterial_iqcod")
+inertia = 10.0
+continuous_cd = 2
+angular_damp = 0.2
+script = ExtResource("1_kaysr")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_vdr78")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+scale = Vector2(0.038791, 0.0394837)
+texture = ExtResource("2_upeim")

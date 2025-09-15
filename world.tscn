@@ -1,0 +1,52 @@
+[gd_scene load_steps=8 format=3 uid="uid://bbrqggqxa6kqs"]
+
+[ext_resource type="Script" uid="uid://bwnx3s61tkbxg" path="res://world.gd" id="1_036b0"]
+[ext_resource type="PackedScene" uid="uid://8hvtbjisam8a" path="res://Wheel.tscn" id="1_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://c4pgiakwaw2md" path="res://ChassisBlock.tscn" id="2_tlwt5"]
+[ext_resource type="Script" uid="uid://b8tkhcdc4t80u" path="res://CarAssembler.gd" id="3_tlwt5"]
+[ext_resource type="Script" uid="uid://ca1768v0ojue0" path="res://VehicleController.gd" id="4_aqk2v"]
+
+[sub_resource type="PhysicsMaterial" id="PhysicsMaterial_gv5m4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_f3sb7"]
+size = Vector2(2000, 100)
+
+[node name="World" type="Node2D"]
+script = ExtResource("1_036b0")
+
+[node name="Ground" type="StaticBody2D" parent="."]
+position = Vector2(54, 539)
+physics_material_override = SubResource("PhysicsMaterial_gv5m4")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground"]
+shape = SubResource("RectangleShape2D_f3sb7")
+
+[node name="ColorRect" type="ColorRect" parent="Ground"]
+offset_left = -79.0
+offset_top = -50.0
+offset_right = 1000.0
+offset_bottom = 50.0
+
+[node name="Ground2" type="StaticBody2D" parent="."]
+position = Vector2(513, 581)
+rotation = -0.358465
+physics_material_override = SubResource("PhysicsMaterial_gv5m4")
+metadata/_edit_group_ = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Ground2"]
+shape = SubResource("RectangleShape2D_f3sb7")
+
+[node name="ColorRect" type="ColorRect" parent="Ground2"]
+offset_left = -79.0
+offset_top = -50.0
+offset_right = 1000.0
+offset_bottom = 50.0
+
+[node name="CarAssembler2D" type="Node2D" parent="."]
+script = ExtResource("3_tlwt5")
+chassis_block_scene = ExtResource("2_tlwt5")
+wheel_scene = ExtResource("1_fj7yv")
+
+[node name="VehicleController" type="Node2D" parent="."]
+script = ExtResource("4_aqk2v")
