@@ -1,10 +1,10 @@
 [gd_scene load_steps=8 format=3 uid="uid://bbrqggqxa6kqs"]
 
 [ext_resource type="Script" uid="uid://bwnx3s61tkbxg" path="res://world.gd" id="1_036b0"]
-[ext_resource type="PackedScene" uid="uid://8hvtbjisam8a" path="res://Wheel.tscn" id="1_fj7yv"]
-[ext_resource type="PackedScene" uid="uid://c4pgiakwaw2md" path="res://ChassisBlock.tscn" id="2_tlwt5"]
-[ext_resource type="Script" uid="uid://b8tkhcdc4t80u" path="res://CarAssembler.gd" id="3_tlwt5"]
-[ext_resource type="Script" uid="uid://ca1768v0ojue0" path="res://VehicleController.gd" id="4_aqk2v"]
+[ext_resource type="PackedScene" uid="uid://8hvtbjisam8a" path="res://vehicle/parts/wheel.tscn" id="1_fj7yv"]
+[ext_resource type="PackedScene" uid="uid://c4pgiakwaw2md" path="res://vehicle/parts/chassis_block.tscn" id="2_tlwt5"]
+[ext_resource type="Script" uid="uid://b8tkhcdc4t80u" path="res://vehicle/scripts/car_assembler.gd" id="3_tlwt5"]
+[ext_resource type="Script" uid="uid://ca1768v0ojue0" path="res://vehicle/scripts/vehicle_controller.gd" id="4_aqk2v"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_gv5m4"]
 

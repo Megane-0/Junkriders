@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bhus3e0lvc5jl"]
+
+[ext_resource type="Script" uid="uid://17ilwsi5m0x4" path="res://vehicle/scripts/vehicle_part.gd" id="1_du3al"]
+
+[node name="vehicle_part" type="RigidBody2D"]
+script = ExtResource("1_du3al")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]

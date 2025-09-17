@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://8hvtbjisam8a"]
 
-[ext_resource type="Script" uid="uid://s1vano28eigm" path="res://wheel.gd" id="1_kaysr"]
+[ext_resource type="Script" uid="uid://s1vano28eigm" path="res://vehicle/scripts/wheel.gd" id="1_kaysr"]
 [ext_resource type="Texture2D" uid="uid://gfyrntmbldy8" path="res://Art/wheels-icon-png-31827.png" id="2_upeim"]
 
 [sub_resource type="PhysicsMaterial" id="PhysicsMaterial_iqcod"]
