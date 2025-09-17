@@ -1,6 +1,6 @@
 [gd_scene load_steps=2 format=3 uid="uid://bvpjl8d55og1m"]
 
-[ext_resource type="Script" uid="uid://cbmmuprxpaqn4" path="res://shop_item.gd" id="1_wxfep"]
+[ext_resource type="Script" uid="uid://cbmmuprxpaqn4" path="res://shop/shop_item.gd" id="1_wxfep"]
 
 [node name="PanelContainer" type="PanelContainer"]
 anchors_preset = 8
