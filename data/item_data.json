@@ -12,7 +12,7 @@
 	"id": 2,
 	"name": "Metal Box",
 	"type": "block",
-	"icon_path": "res://icons/metal_box.png",
+	"icon_path": "res://icons/wood_box.png",
 	"icon_hover_path": "res://icons/metal_box_hover.png",
 	"price": 15,
 	"quantity": 5
@@ -21,7 +21,7 @@
 	"id": 3,
 	"name": "Small Wheel",
 	"type": "wheel",
-	"icon_path": "res://icons/small_wheel.png",
+	"icon_path": "res://icons/wood_box.png",
 	"icon_hover_path": "res://icons/small_wheel_hover.png",
 	"price": 10,
 	"quantity": 8
@@ -30,7 +30,7 @@
 	"id": 4,
 	"name": "Large Wheel",
 	"type": "wheel",
-	"icon_path": "res://icons/large_wheel.png",
+	"icon_path": "res://icons/wood_box.png",
 	"icon_hover_path": "res://icons/large_wheel_hover.png",
 	"price": 20,
 	"quantity": 4

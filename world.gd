@@ -3,8 +3,8 @@ extends Node2D
 func _ready() -> void:
 	var grid: Array = [
 		[".",".",".",".","."],
-		[".","C","C","C","W"],
-		[".","W","","W","."],
+		[".","C","","C",""],
+		[".","W","","W",""],
 	]
 
 	# 1) PREVIEW: check for chassis that would get more than one wheel

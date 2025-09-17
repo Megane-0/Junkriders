@@ -3,6 +3,8 @@ extends Control
 @onready var product_grid : GridContainer = $VBoxContainer/ProductGrid
 
 @export var shop_item : PackedScene
+@export var placer_path: NodePath 
+@onready var placer = get_node(placer_path)
 
 var shop_data : Array  = []
 
@@ -20,7 +22,7 @@ func load_item_data(path: String) -> void:
 			shop_data = result
 	
 func setup_store() -> void:
-	product_grid.columns = 3
+	product_grid.columns = 8
 
 	for data in shop_data:
 		var temp = shop_item.instantiate()
@@ -29,5 +31,5 @@ func setup_store() -> void:
 		temp.setup(data)
 
 func on_item_buy_pressed(id: int) -> void:
-	print("item with id ", id, " Bought")
-	
+	var data = shop_data[id - 1]
+	placer.begin_placing(data)	

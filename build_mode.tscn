@@ -1,0 +1,27 @@
+[gd_scene load_steps=5 format=3 uid="uid://d2hc3hj7ay5hy"]
+
+[ext_resource type="PackedScene" uid="uid://yf01s8oo8vlo" path="res://shop/object_placer.tscn" id="1_7kulw"]
+[ext_resource type="PackedScene" uid="uid://d2cmygr6octth" path="res://shop/shop.tscn" id="1_k8eeo"]
+[ext_resource type="PackedScene" uid="uid://eyta26su44h0" path="res://shop/build_grid.tscn" id="2_4100s"]
+[ext_resource type="PackedScene" uid="uid://scnrnkhgwky0" path="res://shop/placeable.tscn" id="2_tlxj7"]
+
+[node name="build_mode" type="Node2D"]
+
+[node name="ObjectPlacer" parent="." instance=ExtResource("1_7kulw")]
+grid_path = NodePath("../BuildGrid")
+placeable_scene = ExtResource("2_tlxj7")
+
+[node name="Shop" parent="." instance=ExtResource("1_k8eeo")]
+anchors_preset = 0
+anchor_top = 0.0
+anchor_right = 0.0
+anchor_bottom = 0.0
+offset_left = 9.0
+offset_top = 421.0
+offset_right = 1155.0
+offset_bottom = 653.0
+grow_horizontal = 1
+grow_vertical = 1
+placer_path = NodePath("../ObjectPlacer")
+
+[node name="BuildGrid" parent="." instance=ExtResource("2_4100s")]

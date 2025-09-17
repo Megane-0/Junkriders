@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://scnrnkhgwky0"]
+
+[ext_resource type="Script" uid="uid://b8w66yja6jmms" path="res://shop/placeable.gd" id="1_xgo0x"]
+
+[node name="Placeable" type="Node2D"]
+script = ExtResource("1_xgo0x")
+
+[node name="Visual" type="Sprite2D" parent="."]
+
+[node name="Collider" type="CollisionShape2D" parent="."]

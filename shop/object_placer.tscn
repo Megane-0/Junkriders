@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://yf01s8oo8vlo"]
+
+[ext_resource type="Script" uid="uid://b71m7l72av15x" path="res://shop/object_placer.gd" id="1_pm7kd"]
+
+[node name="ObjectPlacer" type="Node2D"]
+script = ExtResource("1_pm7kd")
